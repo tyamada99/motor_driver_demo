@@ -54,16 +54,16 @@ let 距離 = 0
 let スピード = 0
 let 電源 = 0
 電源 = 0
-スピード = 256
+スピード = 500
 停止()
 basic.forever(function () {
     while (電源 == 1) {
         前進()
-        basic.pause(200)
         while (距離を測る() < 15) {
             右回転()
             basic.pause(200)
         }
+        basic.pause(200)
     }
     停止()
 })
